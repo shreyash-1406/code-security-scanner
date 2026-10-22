@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secscan"
+version = "0.1.0"
+description = "Lightweight static security and code quality scanner"
+authors = [{ name = "Shreyash Uparkar" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.scripts]
+secscan = "secscan.cli:main"
+
+[tool.setuptools]
+packages = ["secscan"]
